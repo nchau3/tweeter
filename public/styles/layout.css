@@ -23,3 +23,19 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+}
+
+main {
+  display: flex;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f4f1ec;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}

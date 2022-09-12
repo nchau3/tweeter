@@ -1,0 +1,25 @@
+#navbar {
+  display: flex;
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee';
+  font-size: 36px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#writetweet {
+  display: flex;
+  width: auto;
+  font-size: 28px;
+  font-family: 'Source Sans Pro', sans-serif;
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
