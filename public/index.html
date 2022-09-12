@@ -43,7 +43,7 @@
       </div>
   </header>
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main>
       <section class="new-tweet">
         <form id="tweet-form" method ="POST" action="/tweets" enctype = 'application/x-www-form-urlencoded'>
           <label class="tweet-label" for="tweet-text">What are you humming about?</label>
@@ -54,21 +54,9 @@
           </div>
         </form>
       </section>
-      <article class = tweet-container>
-        <header>
-          <div>Fake Name</div>
-          <div id="user-handle">@FakeName</div>
-        </header>
-        <p>This is an example of a Tweet.</p>
-        <footer>
-          <div id="date-posted">Date Posted</div>
-          <div>
-            <i class="fa-solid fa-flag like-button"></i>
-            <i class="fa-solid fa-retweet like-button"></i>
-            <i class="fa-solid fa-heart like-button"></i>
-          </div>
-        </footer>
-      </article>
+      <section id="tweet-container">
+        <!-- Tweets rendered here -->
+      </section>
     </main>
   </body>
 </html>

@@ -1,4 +1,8 @@
-.tweet-container {
+#tweet-container {
+  width: 100%;
+}
+
+.container {
   display: flex;
   height: auto;
   width: 100%;
@@ -7,13 +11,14 @@
   border: solid;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 1em;
 }
 
-.tweet-container:hover {
+.container:hover {
   box-shadow: 5px 5px 0 hsl(226, 43%, 44%, 30%);
 }
 
-article header {
+#tweet-container header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,12 +29,23 @@ article header {
   width: 100%;
 }
 
+#user {
+  display: flex;
+  align-items: center;
+}
+
+#user img{
+  height: 2em;
+  width: 2em;
+  margin-right: .5em;
+}
+
 #user-handle {
   color: hsl(226, 43%, 44%, 30%);
   font-weight: bold;
 }
 
-article footer {
+#tweet-container footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,9 +56,9 @@ article footer {
   font-size: .75em;
 }
 
-article p {
+#tweet-container article {
   width: 97%;
-  height: auto;
+  height: 3.5em;
 }
 
 .like-button {
