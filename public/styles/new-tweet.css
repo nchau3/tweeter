@@ -1,10 +1,7 @@
 .new-tweet {
-  display: flex;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px
+  padding: .75rem;
+  margin-bottom: 1.5rem
 }
 
 #tweet-form {
@@ -16,20 +13,21 @@
 }
 
 #tweet-text {
-  height: 25px;
+  height: 3em;
+  font-size: .75em;
   resize: none;
   display: block;
   width: 100%;
   background-color: #f4f1ec;
   outline: none;
-  overflow: hidden;
+  overflow: auto;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: solid #545149;;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-bottom: 30px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding-bottom: 2rem;
 }
 
 .form-buttons {
@@ -42,16 +40,25 @@
   background-color: #4056A1;
   color: #FFFFFF;
   border: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  justify-content:space-between
+  padding-top: .45rem;
+  padding-bottom: .45rem;
+  padding-left: .6rem;
+  padding-right: .6rem;
+  justify-content:space-between;
+  transition: opacity .15s
+}
+
+#tweet-button:hover {
+  opacity: 0.8
+}
+
+#tweet-button:active {
+  opacity: 0.4
 }
 
 #char-counter {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: .45rem;
+  padding-bottom: .45rem;
+  padding-left: .6rem;
+  padding-right: .6rem;
 }

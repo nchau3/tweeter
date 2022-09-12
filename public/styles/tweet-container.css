@@ -1,0 +1,56 @@
+.tweet-container {
+  display: flex;
+  height: auto;
+  width: 100%;
+  font-size: .75em;
+  padding: .75rem;
+  border: solid;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tweet-container:hover {
+  box-shadow: 5px 5px 0 hsl(226, 43%, 44%, 30%);
+}
+
+article header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+
+#user-handle {
+  color: hsl(226, 43%, 44%, 30%);
+  font-weight: bold;
+}
+
+article footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-self: flex-end;
+  border-top: solid;
+  padding: .45rem;
+  font-size: .75em;
+}
+
+article p {
+  width: 97%;
+  height: auto;
+}
+
+.like-button {
+  color: #4056A1;
+  padding-left: .3em;
+  padding-right: .3em;
+}
+
+.like-button:hover {
+  filter: invert(1);
+}

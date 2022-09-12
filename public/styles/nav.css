@@ -6,7 +6,7 @@
   background-color: #4056A1;
   color: #FFFFFF;
   font-family: 'Bungee';
-  font-size: 36px;
+  font-size: 1.3em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   align-items: center;
@@ -16,10 +16,8 @@
 #writetweet {
   display: flex;
   width: auto;
-  font-size: 28px;
+  font-size: 0.7em;
   font-family: 'Source Sans Pro', sans-serif;
   flex-direction: column;
   align-items: center;
 }
-
- 
