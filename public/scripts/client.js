@@ -47,25 +47,36 @@ $(document).ready(function () {
       $('#tweet-container').append($tweet);
     }
   };
-  
+
   //replace default POST behaviour with AJAX request
   $('#tweet-form').submit(function(event) {
     event.preventDefault();
     const input = $(this[0]).val();
+    const error = $('#error-banner');
+    errorMessage = error.children().children()[1];
     //blank field
     if (!input) {
-      return alert("NO TWEET! ADD TWEET NOW!");
+      errorMessage.innerHTML = "NO TWEET! ADD TWEET NOW!";
+      $(error[0]).slideDown({duration: 500});
+      return;
     }
     //message past max length
     if (input.length > 140) {
-      return alert("TOO LONG! SAY LESS!")
+      errorMessage.innerHTML = "TOO LONG! SAY LESS!";
+      $(error[0]).slideDown({duration: 500});
+      return;
     }
+
+    //slide back up before submitting valid tweet
+    $(error[0]).slideUp({duration: 500});    
+
     $.post('/tweets', $(this).serialize())
     //add latest tweet after posting
     .then(function() {
       $.ajax('/tweets', { method: 'GET'})
       .then(function (tweetsData) {
         const $newTweet = createTweetElement(tweetsData[tweetsData.length-1]);
+        //clear form and reset counter
         $('#tweet-text').val('');
         $('#char-counter').val(140);
         $('#tweet-container').prepend($newTweet);
