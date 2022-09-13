@@ -5,6 +5,11 @@
  */
 
 $(document).ready(function () {
+  
+  $('#dropdown-button').click(function() {
+    console.log('clicked!');
+    console.log($(this));
+  });
 
   const escape = function (str) {
     let div = document.createElement("div");
@@ -90,6 +95,7 @@ $(document).ready(function () {
       renderTweets(tweetsData.reverse());
     })
   };
+
   loadTweets();
 
 });
