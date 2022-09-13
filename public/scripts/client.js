@@ -6,6 +6,12 @@
 
 $(document).ready(function () {
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function(tweetObj) {
     const { name, avatars, handle } = tweetObj.user;
     const tweet = tweetObj.content.text;
@@ -21,7 +27,7 @@ $(document).ready(function () {
         <div id="user-handle">${handle}</div>
       </header>
       <article>
-        <p>${tweet}</p>
+        <p>${escape(tweet)}</p>
       </article>
       <footer>
         <div>${datePosted}</div>
@@ -42,18 +48,37 @@ $(document).ready(function () {
     }
   };
   
+  //replace default POST behaviour with AJAX request
   $('#tweet-form').submit(function(event) {
     event.preventDefault();
-    $.post('/tweets', $(this).serialize());
+    const input = $(this[0]).val();
+    //blank field
+    if (!input) {
+      return alert("NO TWEET! ADD TWEET NOW!");
+    }
+    //message past max length
+    if (input.length > 140) {
+      return alert("TOO LONG! SAY LESS!")
+    }
+    $.post('/tweets', $(this).serialize())
+    //add latest tweet after posting
+    .then(function() {
+      $.ajax('/tweets', { method: 'GET'})
+      .then(function (tweetsData) {
+        const $newTweet = createTweetElement(tweetsData[tweetsData.length-1]);
+        $('#tweet-text').val('');
+        $('#char-counter').val(140);
+        $('#tweet-container').prepend($newTweet);
+      });
+    });
   });
 
   const loadTweets = function() {
     $.ajax('/tweets', {method: 'GET'})
     .then(function (tweetsData) {
-      renderTweets(tweetsData);
+      renderTweets(tweetsData.reverse());
     })
   };
-
   loadTweets();
 
 });

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('#tweet-text').on('input', function () {
+  $('#tweet-text').on('input change', function () {
     let count = $(this).val().length;
     let counter = $(this).next().children()[1];
     if (count > 140) {
