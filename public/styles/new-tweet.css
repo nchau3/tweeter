@@ -14,14 +14,14 @@
 }
 
 #tweet-text {
-  height: 3em;
+  height: 4em;
   font-size: .75em;
   resize: none;
   display: block;
   width: 100%;
   background-color: #f4f1ec;
   outline: none;
-  overflow: auto;
+  overflow: visible;
   border-top: none;
   border-left: none;
   border-right: none;

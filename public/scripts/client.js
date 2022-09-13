@@ -17,6 +17,14 @@ $(document).ready(function () {
     }
   });
 
+  //scroll back to top button
+  $('#back-to-top').click(function() {
+    const newTweet = $('#new-tweet');
+    $(document).scrollTop(381);
+    newTweet.slideDown({duration: 500});
+    $(this).css('display', 'none');
+  });
+
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));

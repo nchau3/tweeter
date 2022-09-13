@@ -28,6 +28,7 @@
   display: none;
   color: white;
   background-color: red;
+  background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
   font-size: 1.2em;
   border: none;
   height: 3em;
@@ -39,9 +40,9 @@
 }
 
 #back-to-top:hover {
-  background-color: rgb(255, 59, 59)
+  background-color: rgb(255, 65, 65)
 }
 
 #back-to-top:active {
-  background-color: rgb(255, 110, 110)
+  background-color: rgb(255, 88, 88)
 }

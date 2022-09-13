@@ -10,15 +10,15 @@ $(document).ready(function() {
       $(counter).css('color', "#545149");
       counter.innerHTML = 140 - count;
     }
-  })
+  });
 
   $(document).scroll(function() {
-    if ($(this).scrollTop() > 0) {
+    if ($(this).scrollTop() > 381) {
       $('#back-to-top').css('display', 'block');
     }
-    if ($(this).scrollTop() === 0) {
+    if ($(this).scrollTop() <= 381) {
       $('#back-to-top').css('display', 'none');
     }
-  })
+  });
 
 });
