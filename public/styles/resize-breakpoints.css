@@ -1,0 +1,45 @@
+@media only screen and (max-width: 450px) {
+  #navbar {
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #main-header {
+    height: 300px;
+  }
+
+  #main-header div {
+    font-size: .65em;
+  }
+
+  #avatar {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  main {
+    width: 50%;
+    padding-top: 140px;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  #main-header {
+    width: 25rem;
+    height: 25rem;
+    margin-top: 180px;
+    padding-top: 0;
+    border-radius: 50rem;
+    position: fixed;
+    left: 5%;
+    margin-right: 5%;
+  }
+}

@@ -20,7 +20,7 @@ $(document).ready(function () {
   //scroll back to top button
   $('#back-to-top').click(function() {
     const newTweet = $('#new-tweet');
-    $(document).scrollTop(381);
+    $(document).scrollTop(0);
     newTweet.slideDown({duration: 500});
     $(this).css('display', 'none');
   });

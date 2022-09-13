@@ -13,10 +13,10 @@ $(document).ready(function() {
   });
 
   $(document).scroll(function() {
-    if ($(this).scrollTop() > 381) {
+    if ($(this).scrollTop() > 0) {
       $('#back-to-top').css('display', 'block');
     }
-    if ($(this).scrollTop() <= 381) {
+    if ($(this).scrollTop() === 0) {
       $('#back-to-top').css('display', 'none');
     }
   });

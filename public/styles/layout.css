@@ -25,6 +25,8 @@ body {
  */
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -33,6 +35,7 @@ main {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 2.5%;
   margin-bottom: .5em;
   background-color: #f4f1ec;
   flex-direction: column;
