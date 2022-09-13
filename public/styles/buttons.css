@@ -1,0 +1,47 @@
+@keyframes bounce {
+  0% {
+    bottom: 0
+  }
+  50% {
+    bottom: 4px
+  }
+  100% {
+    bottom: 0
+  }
+}
+
+#dropdown-button {
+  font-size: 1.2em;
+  position: relative;
+  padding: .3em;
+  animation-name: bounce;
+  animation-duration: .6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#dropdown-button:hover {
+  color: red;
+}
+
+#back-to-top {
+  display: none;
+  color: white;
+  background-color: red;
+  font-size: 1.2em;
+  border: none;
+  height: 3em;
+  width: 3em;
+  border-radius: 6rem;
+  position: fixed;
+  align-self: flex-end;
+  bottom: 5%;
+}
+
+#back-to-top:hover {
+  background-color: rgb(255, 59, 59)
+}
+
+#back-to-top:active {
+  background-color: rgb(255, 110, 110)
+}

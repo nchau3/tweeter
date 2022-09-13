@@ -5,10 +5,16 @@
  */
 
 $(document).ready(function () {
-  
+
+  //write new tweet button
   $('#dropdown-button').click(function() {
-    console.log('clicked!');
-    console.log($(this));
+    const newTweet = $('#new-tweet');
+    const displayStatus = newTweet.css('display');
+    if (displayStatus === 'none') {
+      newTweet.slideDown({duration: 500});
+    } else if (displayStatus === 'block') {
+      newTweet.slideUp({duration: 500});
+    }
   });
 
   const escape = function (str) {
