@@ -44,15 +44,16 @@
           <h2>Nicholas Chau</h2>
       </div>
     </header>
-    <div id="error-banner">
-      <label id="error-message">
-        <div><i class="fa-solid fa-triangle-exclamation"></i></div>
-        <div name="message-content"></div>
-        <div><i class="fa-solid fa-triangle-exclamation"></i></div>
-      </label>
-    </div>
+
     <!-- Page-specific (main) content here -->
     <main>
+      <div id="error-banner">
+        <label id="error-message">
+          <div><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <div name="message-content"></div>
+          <div><i class="fa-solid fa-triangle-exclamation"></i></div>
+        </label>
+      </div>
       <section id="new-tweet">
         <form id="tweet-form" method ="POST" action="/tweets" enctype = 'application/x-www-form-urlencoded'>
           <label class="tweet-label" for="tweet-text">What are you humming about?</label>

@@ -18,10 +18,16 @@
   animation-duration: .6s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 #dropdown-button:hover {
+  animation-play-state: paused;
   color: red;
+}
+
+#dropdown-button:active {
+  transform: translateY(1px);
 }
 
 #back-to-top {
@@ -30,19 +36,24 @@
   background-color: red;
   background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
   font-size: 1.2em;
-  border: none;
+  border: rgb(201, 0, 0);
   height: 3em;
   width: 3em;
+  margin-right: 5px;
   border-radius: 6rem;
   position: fixed;
   align-self: flex-end;
   bottom: 5%;
+  transition: all 0.15s
 }
 
 #back-to-top:hover {
-  background-color: rgb(255, 65, 65)
+  background-color: rgb(255, 65, 65);
+  box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 12px;
+  transform: translateY(-1px);
 }
 
 #back-to-top:active {
-  background-color: rgb(255, 88, 88)
+  background-color: rgb(255, 88, 88);
+  transform: translateY(0);
 }
