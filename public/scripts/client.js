@@ -27,6 +27,15 @@ $(document).ready(function () {
     $(this).css('display', 'none');
   });
 
+  //head-wiggle functionality
+  $(document).on('click', '.like-button', function() {
+    const avatar = $(this).parents('.container').find('img');
+    setTimeout(function() {
+      (avatar).css('animation-play-state', 'paused')
+      }, 1050);
+    (avatar).css('animation-play-state', 'running');
+  });
+
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));

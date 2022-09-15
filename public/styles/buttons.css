@@ -15,7 +15,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
   100% {
     transform: translateY(0);
@@ -28,9 +28,6 @@
   }
   75% {
     transform: rotateZ(5deg)
-  }
-  100% {
-
   }
 }
 
@@ -84,25 +81,20 @@
 
 #back-to-top:active {
   background-color: rgb(255, 88, 88);
-  transform: translateY(0);
 }
 
 .like-button {
   color: #4056A1;
-  padding: .3em;
+  padding: .35em;
   transition: filter .25s;
 }
 
 .like-button:hover {
   filter: invert(1);
-  animation-name: wiggle;
-  animation-duration: .35s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
+  transform: translateY(-1px);
 }
 
 .like-button:active {
-  animation-play-state: paused;
-  opacity: 0.5;
+  transform: translateY(0);
+  opacity: 0.7;
 }

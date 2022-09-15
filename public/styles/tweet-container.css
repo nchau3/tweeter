@@ -38,19 +38,11 @@
   height: 2em;
   width: 2em;
   margin-right: .5em;
-}
-
-#user img:hover {
   animation-name: wiggle;
   animation-duration: .35s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-play-state: running;
-}
-
-#user img:active {
   animation-play-state: paused;
-  opacity: 0.85;
 }
 
 #user-handle {

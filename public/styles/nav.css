@@ -23,22 +23,3 @@
   align-items: center;
 }
 
-#error-banner {
-  display: none;
-  color: red;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  align-content: center;
-  padding: 20px;
-}
-
-#error-banner label {
-  display: flex;
-  font-weight: bold;
-  justify-content: space-around;
-  width: 100%;
-  border: solid;
-  border-radius: 3px;
-  padding: .25em;
-}
