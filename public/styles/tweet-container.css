@@ -63,6 +63,7 @@
 }
 
 #tweet-container article {
+  word-wrap:break-word;
   width: 97%;
   height: 3.5em;
 }

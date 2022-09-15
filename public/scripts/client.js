@@ -91,12 +91,18 @@ $(document).ready(function () {
     if (!input) {
       errorMessage.innerHTML = "NO TWEET! ADD TWEET NOW!";
       $(error[0]).slideDown({duration: 500});
+      setTimeout(function() {
+        $(error[0]).slideUp({duration: 500})
+        }, 3000);
       return;
     }
     //message past max length
     if (input.length > 140) {
       errorMessage.innerHTML = "TOO LONG! SAY LESS!";
       $(error[0]).slideDown({duration: 500});
+      setTimeout(function() {
+        $(error[0]).slideUp({duration: 500})
+        }, 3000);
       return;
     }
 
