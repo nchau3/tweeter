@@ -30,10 +30,13 @@ $(document).ready(function () {
   //head-wiggle functionality
   $(document).on('click', '.like-button', function() {
     const avatar = $(this).parents('.container').find('img');
-    setTimeout(function() {
-      (avatar).css('animation-play-state', 'paused')
-      }, 1050);
-    (avatar).css('animation-play-state', 'running');
+    const playState = avatar.css('animation-play-state');
+    if (playState !== 'running') {
+      setTimeout(function() {
+        avatar.css('animation-play-state', 'paused')
+        }, 1050);
+      avatar.css('animation-play-state', 'running');
+    }
   });
 
   const escape = function (str) {

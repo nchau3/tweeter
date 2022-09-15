@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-shadow: 1.5px 1.5px 2px rgb(85, 85, 85);
   background-color: #001854;
   background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
 }

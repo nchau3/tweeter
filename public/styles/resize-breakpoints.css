@@ -20,10 +20,19 @@
 
   #error-banner {
     font-size: .75em;
+    padding-bottom: 1.5em;
   }
 
   #back-to-top {
     font-size: 0.85em;
+  }
+
+  #new-tweet {
+    font-size: 0.65em;
+  }
+
+  #tweet-container {
+    font-size: 0.6em;
   }
 
 }
@@ -42,14 +51,32 @@
   }
 
   #main-header {
-    width: 25rem;
-    height: 25rem;
+    width: 37vw;
+    height: 37vw;
     margin-top: 180px;
     padding-top: 0;
-    border-radius: 50rem;
+    border-radius: 74vw;
     position: fixed;
     left: 5%;
     margin-right: 5%;
+    font-size: 2vw;
+  }
+
+  #main-header img {
+    width: 18vw;
+    height: 18vw;
+  }
+
+  #new-tweet {
+    padding-top: 0;
+  }
+
+  #error-banner {
+    padding-bottom: 60px;
   }
   
+  #tweet-container {
+    font-size: 1.3em;
+  }
+
 }
