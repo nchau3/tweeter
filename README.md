@@ -12,23 +12,23 @@ All front-end development completed by author, back-end provided by Lighthouse L
 
 ## Screenshots
 
-!["main-page"]( URL )
+!["main-page"](https://github.com/nchau3/tweeter/blob/master/docs/main-page.png)
 
 Main page.
 
-!["error-character-limit"]( URL )
+!["error-character-limit"](https://github.com/nchau3/tweeter/blob/master/docs/too-long.png)
 
 Please do not exceed 140 characters per tweet.
 
-!["error-blank-form"]( URL )
+!["error-blank-form"](https://github.com/nchau3/tweeter/blob/master/docs/empty-tweet.png)
 
 Please do not press the TWEET button unless you have something to say.
 
-!["desktop"]( URL )
+!["desktop"](https://github.com/nchau3/tweeter/blob/master/docs/desktop.png)
 
 Responsive design for larger window size.
 
-!["mobile"]( URL )
+!["mobile"](https://github.com/nchau3/tweeter/blob/master/docs/mobile.png)
 
 Responsive design for mobile viewing.
 
