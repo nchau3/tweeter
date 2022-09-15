@@ -15,6 +15,7 @@ $(document).ready(function() {
   $(document).scroll(function() {
     if ($(this).scrollTop() > 0) {
       $('#back-to-top').css('display', 'block');
+      $('#new-tweet').slideUp({duration: 600});
     }
     if ($(this).scrollTop() === 0) {
       $('#back-to-top').css('display', 'none');
