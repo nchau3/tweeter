@@ -34,10 +34,23 @@
   align-items: center;
 }
 
-#user img{
+#user img {
   height: 2em;
   width: 2em;
   margin-right: .5em;
+}
+
+#user img:hover {
+  animation-name: wiggle;
+  animation-duration: .35s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+#user img:active {
+  animation-play-state: paused;
+  opacity: 0.85;
 }
 
 #user-handle {
@@ -59,14 +72,4 @@
 #tweet-container article {
   width: 97%;
   height: 3.5em;
-}
-
-.like-button {
-  color: #4056A1;
-  padding-left: .3em;
-  padding-right: .3em;
-}
-
-.like-button:hover {
-  filter: invert(1);
 }

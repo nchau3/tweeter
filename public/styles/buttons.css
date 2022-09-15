@@ -1,12 +1,36 @@
-@keyframes bounce {
+@keyframes bigBounce {
   0% {
-    bottom: 0
+    transform: translateY(0);
   }
   50% {
-    bottom: 4px
+    transform: translateY(-4px);
   }
   100% {
-    bottom: 0
+    transform: translateY(0);
+  }
+}
+
+@keyframes smallBounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes wiggle {
+  25% {
+    transform: rotateZ(-5deg)
+  }
+  75% {
+    transform: rotateZ(5deg)
+  }
+  100% {
+
   }
 }
 
@@ -14,7 +38,7 @@
   font-size: 1.2em;
   position: relative;
   padding: .3em;
-  animation-name: bounce;
+  animation-name: bigBounce;
   animation-duration: .6s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -27,7 +51,7 @@
 }
 
 #dropdown-button:active {
-  transform: translateY(1px);
+  color: rgb(255, 137, 137);
 }
 
 #back-to-top {
@@ -44,16 +68,41 @@
   position: fixed;
   align-self: flex-end;
   bottom: 5%;
-  transition: all 0.15s
+  transition: all 0.15s;
+  animation-name: smallBounce;
+  animation-duration: .6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 #back-to-top:hover {
   background-color: rgb(255, 65, 65);
   box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 12px;
-  transform: translateY(-1px);
+  animation-play-state: paused;
 }
 
 #back-to-top:active {
   background-color: rgb(255, 88, 88);
   transform: translateY(0);
+}
+
+.like-button {
+  color: #4056A1;
+  padding: .3em;
+  transition: filter .25s;
+}
+
+.like-button:hover {
+  filter: invert(1);
+  animation-name: wiggle;
+  animation-duration: .35s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.like-button:active {
+  animation-play-state: paused;
+  opacity: 0.5;
 }
