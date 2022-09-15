@@ -6,7 +6,31 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["homepage"]( URL )
+This interpretation of the Tweeter project aims for a straightforward and smooth user experience. New tweets are added in real time, and various click/scroll interactions have been implemented for essential functions and error handling.
+
+All front-end development completed by author, back-end provided by Lighthouse Labs.
+
+## Screenshots
+
+!["main-page"]( URL )
+
+Main page.
+
+!["error-character-limit"]( URL )
+
+Please do not exceed 140 characters per tweet.
+
+!["error-blank-form"]( URL )
+
+Please do not press the TWEET button unless you have something to say.
+
+!["desktop"]( URL )
+
+Responsive design for larger window size.
+
+!["mobile"]( URL )
+
+Responsive design for mobile viewing.
 
 ## Dependencies
 
@@ -21,3 +45,4 @@ This repository is the starter code for the project: Students will fork and clon
 - Install dependencies using the `npm install` command.
 - Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 - Go to <http://localhost:8080/> in your browser.
+- start tweeting!

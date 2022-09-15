@@ -6,8 +6,8 @@
   display: flex;
   height: auto;
   width: 100%;
-  font-size: .75em;
-  padding: .75rem;
+  font-size: 1em;
+  padding: 1rem;
   border: solid;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,7 +47,7 @@
 }
 
 #user-handle {
-  color: hsl(226, 43%, 44%, 30%);
+  color: rgba(64, 86, 160, 0.589);
   font-weight: bold;
 }
 

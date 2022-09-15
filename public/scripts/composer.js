@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  //char-counter
   $('#tweet-text').on('input', function () {
     let count = $(this).val().length;
     let counter = $(this).next().children()[1];
@@ -12,13 +13,14 @@ $(document).ready(function() {
     }
   });
 
+  //show back-to-top & hide form on scroll
   $(document).scroll(function() {
-    if ($(this).scrollTop() > 0) {
-      $('#back-to-top').css('display', 'block');
-      $('#new-tweet').slideUp({duration: 600});
+    const scrollTopVal = $(this).scrollTop();
+    if (scrollTopVal > 0) {
+      $('#back-to-top').fadeIn({duration: 100});
     }
-    if ($(this).scrollTop() === 0) {
-      $('#back-to-top').css('display', 'none');
+    if (scrollTopVal === 0) {
+      $('#back-to-top').fadeOut({duration: 100});
     }
   });
 
